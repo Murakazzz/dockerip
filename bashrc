@@ -1,4 +1,4 @@
-#Add to bashrc and run source ~/.bashrc
+#Add to bashrc and run " source ~/.bashrc "
 dockerip() {
     docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
 }
