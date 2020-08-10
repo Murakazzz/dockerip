@@ -1,4 +1,5 @@
 #Add to bashrc and run " source ~/.bashrc "
+#Or git clone https://github.com/Murakazzz/dockerip.git && cp bashrc /usr/local/bin/dockerip && chmod +x /usr/local/bin/dockerip
 dockerip() {
     docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' "$@"
 }
